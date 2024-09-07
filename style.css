@@ -1,0 +1,105 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background: #444444;
+}
+
+#weatherApp{
+    margin: auto;
+    width: 350px;
+    height: auto;
+    text-align:left;
+    
+   
+}
+
+#location-input{
+    padding: 0.4em 1em;
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+    background-color: #7877777e ;
+    height: 1.5em;
+    color: white;
+}
+
+.button{
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    align-content: center;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 25px;
+    margin: 0.5em;
+    color: rgb(254, 254, 253);
+    background-color: #7877776f;
+    transition: 0.2s ease-in-out;
+    
+ }
+
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/weather-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.card{
+    background: #0b0b0bd3;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 1em;
+    font-family: inherit;
+}
+
+
+#location-input:focus{
+    background-color:#bdbaba6f;
+}
+
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+    margin-bottom: -5px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: -10px;
+   
+}
+img.icon {
+    width: 70px;
+    margin-left: -10px;
+}
+
+h1.temp{
+    margin: 0px;
+    margin-bottom: 0.5em ;
+    font-size: 300%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.city{
+    font-family: 'Times New Roman', Times, serif;
+}
