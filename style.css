@@ -66,6 +66,7 @@ body{
     border-radius: 30px;
     width: 100%;
     max-width: 400px;
+    min-width: 200px;
     margin: 1em;
     font-family: inherit;
 }
@@ -86,6 +87,7 @@ body{
     align-items: center;
     margin-bottom: -10px;
    
+   
 }
 img.icon {
     width: 70px;
@@ -102,4 +104,53 @@ h1.temp{
 
 .city{
     font-family: 'Times New Roman', Times, serif;
+}
+
+@keyframes shake {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    10%, 20% {
+        transform: translateY(2px);
+      }
+    30%,40%{
+      transform: translateY(-2px);
+    }
+    50%,60%{
+        transform: translateY(2px);
+      }
+    70%,80%{
+        transform: translateY(-2px);
+      }
+    90%{
+        transform: translateY(1px);
+      }
+  }
+
+  .icon {
+    animation: shake 5s infinite;
+  }
+
+@media screen and (max-width: 750px){
+    .card{
+        width: 6.25rem;
+        height: auto;
+        align-self:  end;
+        margin-bottom: 150px;
+    }
+
+    #location-input{
+        width: 135px;
+    }
+    
+    #weatherApp{
+        font-size: 70%;
+        width: 200px;
+    }
+
+    .button{
+        width: 25px;
+        height: 25px;
+        padding: 2px;
+    }
 }
