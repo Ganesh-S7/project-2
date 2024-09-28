@@ -125,8 +125,6 @@ h1.temp{
     90%{
         transform: translateY(1px);
       }
-    
-   
   }
 
   .icon {
@@ -142,17 +140,17 @@ h1.temp{
     }
 
     #location-input{
-        width: 135px;
+        width: 130px;
     }
     
     #weatherApp{
         font-size: 70%;
-        width: 200px;
+        width: 210px;
     }
 
     .button{
         width: 25px;
-       height: 25px;
-       padding: 2px;
+        height: 25px;
+        padding: 2px;
     }
 }
